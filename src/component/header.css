@@ -1,0 +1,35 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+.bg-primary {
+    color:rgb(255, 251, 251);
+    
+    border-bottom: 3px solid #0197f6;
+}
+
+.bg-primary .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.landing {
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("/public/image/ntg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.branding img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.branding h1 {
+    display: inline-block;
+}
+.showcase {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 190px;
+}

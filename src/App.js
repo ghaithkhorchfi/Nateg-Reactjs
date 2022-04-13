@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './component/Header';
+import About from './component/About';
+import Team from './component/Team';
+import Partenaire from './component/Partenaire';
+import Events from './component/Events';
+import Footer from './component/Footer';
+import CountDown from './component/CountDown';
+import Count from './component/Count';
 
 function App() {
+  setInterval(Count, 1000);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment >
+      <Header/>
+      <About/>
+      <Team/>
+      <Partenaire/>
+      <Events/>
+      <CountDown/>
+      <Footer/>
+    </React.Fragment>
+
   );
 }
 
